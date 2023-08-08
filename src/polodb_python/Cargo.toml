@@ -1,0 +1,17 @@
+[package]
+name = "polodb_python"
+version = "0.1.0"
+edition = "2021"
+authors = ["Antoine Langlois <antoine.l@antoine-langlois.net>"]
+license = "MPL-2.0"
+repository = "https://github.com/PoloDB/PoloDB"
+description = "Python bindings for PoloDB"
+keywords = ["database", "embedded", "cross-platform", "python", "bindings"]
+
+[lib]
+name = "polodb_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
+polodb_core = { path = "../polodb_core" }

@@ -4,9 +4,7 @@ members = [
     "src/polodb",
     "src/polodb_line_diff",
     "src/polodb_wasm",
+    "src/polodb_python",
 ]
 
-exclude = [
-    "build",
-    "obj",
-]
+exclude = ["build", "obj"]
