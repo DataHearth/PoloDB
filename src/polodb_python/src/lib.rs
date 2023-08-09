@@ -1,8 +1,9 @@
 use database::Database;
 use pyo3::{pymodule, types::PyModule, PyResult, Python};
 
+mod collection;
 mod database;
-mod errors;
+mod utils;
 
 /// A Python module implemented in Rust.
 #[pymodule]
